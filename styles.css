@@ -1,0 +1,232 @@
+* {box-sizing:border-box}
+
+.navbar{
+    width:100%;
+    padding:5px 10vw;
+    color: rgb(234, 234, 241);
+    background-color: rgb(12, 12, 57);
+    height: 10vh;
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    flex:1;
+
+
+}
+.navbar ul li:first-child{
+    flex:1;
+     
+}
+.navbar ul li{
+    font-family: serif ;
+    padding-left:0;
+    
+  }
+  .navbar ul a{
+      margin-left: 20px;
+  
+  }
+  /* Slider items */
+  .carousel-item {
+    height:32rem;
+    color: aliceblue;
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+
+
+}
+.container{
+    bottom: 0;
+    left:0;
+    right:0;
+    padding-bottom: 50px;
+    
+
+}
+form p{
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    
+}
+
+.container-md{
+   size: 50px;
+   color: rgb(242, 242, 247);
+   grid-template-columns: auto;
+   
+   
+
+}
+.col{
+    padding:1rem;
+    border: 2px solid #fff;
+    color:#fff
+
+}
+.col button{
+    background-color: midnightblue;
+
+}
+
+@media screen and (min-width: 1072px) {
+    .mb_70 {
+        margin-bottom: 20px;
+        margin-left: 90px;
+    }
+}
+
+
+
+        .tab {
+            overflow: hidden;
+            /*border-bottom: 1px solid #ccc;*/
+        }
+
+            /* Style the buttons that are used to open the tab content */
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+            }
+
+                /* Change background color of buttons on hover */
+                .tab button:hover {
+                    /*background-color: #6fadfa;*/
+                    /*opacity: 0.7;*/
+                }
+
+                /* Create an active/current tablink class */
+                .tab button.active {
+                    background-color:#1c335f;
+                    color:white;
+
+                    
+                    /*border-left: 0.5px solid grey; 
+                     border-right: 0.5px solid grey; 
+                       border-top: 0.5px solid grey;*/ 
+                }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            background-color: white !important;
+            border: 1px solid white;
+            border-top: none;
+            /*height:500px;*/
+        }
+
+            .tabcontent img {
+                height:400px;
+            }
+        /*.tabcontent{
+         background-color:white;
+    }*/
+        #Undergraduate {
+            display: block;
+        }
+
+        .tab_roles {
+            background-color: #f7f7f7;
+            /*height:400px;*/
+        }
+
+        .tab_font_color {
+            color: #8f8d8d;
+            font-weight: 400;
+        }
+
+        .color-light-yellow {
+            background-color: #f3af4e;
+            border: 2px solid #f3af4e;
+        }
+        .color-light-yellow:hover {
+           color: #f3af4e !important;
+            border: 2px solid #f3af4e;
+             -webkit-box-shadow: 0px 7px 0px #f3af4e !important;
+        -moz-box-shadow: 0px 7px 0px #f3af4e !important;
+        /*-ms-box-shadow: 0px 5px 0px #c4c4c4;
+              -o-box-shadow: 0px 5px 0px #c4c4c4;*/
+        box-shadow: 0px 7px 0px #f3af4e !important;
+        }
+        .dark-color-h {
+            color: #1c335f;
+        }
+
+        .colored-role-span {
+            background-color: #f3af4e;
+            border-radius: 20px;
+            width: 4%;
+            height: 8px;
+        }
+
+        .card-login {
+            border: 20px solid #fff;
+            background: #fbfbfd;
+            /* padding: 80px 50px; */
+            -webkit-box-shadow: 0px 50px 100px 0px rgb(12 0 46 / 5%);
+            box-shadow: 0px 50px 100px 0px rgb(12 0 46 / 5%);
+        }
+        .i-blue{
+            color:#f3af4e;
+        }
+
+       .circular-progress{
+        position:relative;
+        height:250px;
+        width:250px;
+        border-radius:50%;
+        background: conic-gradient(#aa6ffa 3.6deg,#ededed 0deg );
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+
+       } 
+       .circular-progress::before{
+        content:"";
+        position: absolute;
+        height: 210px;
+        width:210px;
+        border-radius: 50%;
+        background-color:#fff;
+       }
+       .progress-value{
+        position:relative;
+        font-size:40px;
+        font-weight:600;
+        color:rgb(88, 55, 55)
+
+       }
+       .text{
+        font-size:20px;
+        font-weight:500;
+        color:#ffff
+
+       }
+
+       footer {
+        text-align: center;
+        padding: 3px;
+        background-color: DarkSalmon;
+        color: white;
+      }
+      .p_absoulte {
+      display: -webkit-box;
+      margin-left:auto;
+      align-items: right;
+      margin-top: 500;
+      }
+    
+
+
+

@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ASU Portal</title>
+    <link rel="shortcut icon" href="CSS/img/logo.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">
+          <img
+            src="CSS/img/arms_of_Egypt_(Official).svg"
+            width="30"
+            height="30"
+            alt=""
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="mailto:ums.support@cis.asu.edu.eg"
+              >Email:ums.support@cis.asu.edu.eg</a
+            >
+          </li>
+          <li><a href="">Phone:+2-26831474</a></li>
+          <li>
+            <a href=""><img src="" alt="" /></a>
+          </li>
+          <li>
+            <a onclick="SelectedIndexChanged('ar'); location.reload();" href="#"
+              ><img src="CSS/img/eg.png" alt="عربى" />عربى</a
+            >
+          </li>
+          <li>
+            <a onclick="SelectedIndexChanged('en'); location.reload();" href="#"
+              ><img src="CSS/img/gb.png" alt="English" />English</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="container">
+      <h1><img src="CSS/img/logoums.png" width="200" height="120" /></h1>
+      <p>Electronic Management System of Ain Shams University</p>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="myCarousel" data-slide-to="1"></li>
+          <li data-target="myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background-image: url(CSS/img/firstimg.jpg)"
+          >
+            <div class="container">
+              <h1>Example headline</h1>
+              <p>jhkjkjbkjbjbkjbkjbkjkbkb</p>
+              <a href="#" class="btn btn-lg btn-primary"> Sign Up Today </a>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url(CSS/img/secondimg.jpg)"></div>
+          <div
+            class="carousel-item"
+            style="background-image: url(CSS/img/thirdimg.jpg)"></div>
+        </div>
+        <a
+          href="#myCarousel"
+          class="carousel-control-prev"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="sr-only"></span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a
+          href="#myCarousel"
+          class="carousel-control-next"
+          role="button"
+          data-slide="next"
+        >
+          <span class="sr-only"></span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <br />
+    <br />
+    <!--Grid Options  -->
+    <section class="sign_in_area bg_color  mobileViewMarginTop">
+
+        <div class="container">
+            <div id="myTab" role="tablist">
+                
+    <style>
+    .portofolio.work_portfolio_item {
+    font: 400 16px/22px "Poppins", sans-serif;
+    color: #6fadfa;
+    display: inline-block;
+    border-radius: 3px;
+    transition: all 0.2s linear;
+    position: relative;
+    cursor: pointer;
+    }
+    .bg-grey{
+    background-color:rgba(240, 240, 251, 0.50)
+    }
+    .img-bg{
+    background-image: url(https://ftr.imgix.net/2CaOwlC4qNLV6rodS3yCbu/f49e13fdd29bb33f9a764032cb4938dd/affiliate-hero-megaphone.png?auto=format%2Ccompress&cs=srgb&dpr=1&fit=max&q=60&w=470&s=9907e33e340ffd5fb3923be4e5475bc4);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:contain
+    }
+    .float-img{
+    position:absolute;
+    z-index:1;
+    
+    left: auto;
+    right: 300px;
+    
+    top:950px;
+     -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+    .padd {
+    padding-top:20px;
+    
+    }
+    .padd span{
+    line-height: normal;
+    }
+    </style>
+    
+    <script>
+    
+    </script>
+                <div class="row nav nav-tabs startup_tab d-flex justify-content-around">
+                    <div class="col-lg-2 col-md-5 col-xs-3 md-mb-30 bg-blue-custome  text-center wow fadeInUp" onclick="getFocus();" data-wow-delay="0.2s" id="Login-div" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <a class="nav-link   pt-4 mt-2" id="Login-tab"  data-toggle="tab" href="#Login" role="tab" aria-controls="Login" aria-selected="false">
+                            <span class="icon" style="background-color:#6fadfa"><svg class="svg-inline--fa fa-user pb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path></svg><!-- <i class="fa-solid fa-user pb-2"></i> Font Awesome fontawesome.com --></span>
+                            <h6>Login</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-5 col-xs-3 md-mb-30  bg-blue-custome   text-center wow fadeInUp" onclick="getFocus()" data-wow-delay="0.2s" id="EarlyAdmission-div" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <a class="nav-link pt-4 mt-2" id="EarlyAdmission-tab" data-toggle="tab" href="#EarlyAdmission" role="tab" aria-controls="EarlyAdmission" aria-selected="false">
+                            <span class="icon" style="background-color:#f3af4e"><svg class="svg-inline--fa fa-pen pb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" role="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32zM421.7 220.3L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3z"></path></svg><!-- <i class="fa-solid fa-pen pb-2"></i> Font Awesome fontawesome.com --></span>
+                            <h6>Early Admission Request For Bachelor's students</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-5 col-xs-3 md-mb-30 bg-blue-custome text-center wow fadeInUp" onclick="getFocus()" data-wow-delay="0.2s" id="GraduatesAssociationServices-div" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <a class="nav-link pt-4 mt-2" id="GraduatesAssociationServices-tab" data-toggle="tab" href="#GraduatesAssociationServices" role="tab" aria-controls="GraduatesAssociationServices" aria-selected="false">
+                            <span class="icon text-center" style="background-color:#fa6640"><svg class="svg-inline--fa fa-book-bookmark pb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-bookmark" role="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 336v-288C448 21.49 426.5 0 400 0H352v191.1c0 13.41-15.52 20.88-25.1 12.49L272 160L217.1 204.5C207.5 212.8 192 205.4 192 191.1V0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-32c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg><!-- <i class="fa-solid fa-book-bookmark pb-2"></i> Font Awesome fontawesome.com --></span>
+                            <h6>Graduates Association Services</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-5 col-xs-3 md-mb-30 bg-blue-custome  text-center wow fadeInUp" onclick="getFocus()" data-wow-delay="0.2s" id="FacultyServices-div" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <a class="nav-link pt-4 mt-2" id="FacultyServices-tab" data-toggle="tab" href="#FacultyServices" role="tab" aria-controls="FacultyServices" aria-selected="false">
+                            <span class="icon " style="background-color:#f3af4e"><svg class="svg-inline--fa fa-gears pb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gears" role="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M286.3 155.1C287.4 161.9 288 168.9 288 175.1C288 183.1 287.4 190.1 286.3 196.9L308.5 216.7C315.5 223 318.4 232.1 314.7 241.7C312.4 246.1 309.9 252.2 307.1 257.2L304 262.6C300.1 267.6 297.7 272.4 294.2 277.1C288.5 284.7 278.5 287.2 269.5 284.2L241.2 274.9C230.5 283.8 218.3 290.9 205 295.9L198.1 324.9C197 334.2 189.8 341.6 180.4 342.8C173.7 343.6 166.9 344 160 344C153.1 344 146.3 343.6 139.6 342.8C130.2 341.6 122.1 334.2 121 324.9L114.1 295.9C101.7 290.9 89.5 283.8 78.75 274.9L50.53 284.2C41.54 287.2 31.52 284.7 25.82 277.1C22.28 272.4 18.98 267.5 15.94 262.5L12.92 257.2C10.13 252.2 7.592 247 5.324 241.7C1.62 232.1 4.458 223 11.52 216.7L33.7 196.9C32.58 190.1 31.1 183.1 31.1 175.1C31.1 168.9 32.58 161.9 33.7 155.1L11.52 135.3C4.458 128.1 1.62 119 5.324 110.3C7.592 104.1 10.13 99.79 12.91 94.76L15.95 89.51C18.98 84.46 22.28 79.58 25.82 74.89C31.52 67.34 41.54 64.83 50.53 67.79L78.75 77.09C89.5 68.25 101.7 61.13 114.1 56.15L121 27.08C122.1 17.8 130.2 10.37 139.6 9.231C146.3 8.418 153.1 8 160 8C166.9 8 173.7 8.418 180.4 9.23C189.8 10.37 197 17.8 198.1 27.08L205 56.15C218.3 61.13 230.5 68.25 241.2 77.09L269.5 67.79C278.5 64.83 288.5 67.34 294.2 74.89C297.7 79.56 300.1 84.42 304 89.44L307.1 94.83C309.9 99.84 312.4 105 314.7 110.3C318.4 119 315.5 128.1 308.5 135.3L286.3 155.1zM160 127.1C133.5 127.1 112 149.5 112 175.1C112 202.5 133.5 223.1 160 223.1C186.5 223.1 208 202.5 208 175.1C208 149.5 186.5 127.1 160 127.1zM484.9 478.3C478.1 479.4 471.1 480 464 480C456.9 480 449.9 479.4 443.1 478.3L423.3 500.5C416.1 507.5 407 510.4 398.3 506.7C393 504.4 387.8 501.9 382.8 499.1L377.4 496C372.4 492.1 367.6 489.7 362.9 486.2C355.3 480.5 352.8 470.5 355.8 461.5L365.1 433.2C356.2 422.5 349.1 410.3 344.1 397L315.1 390.1C305.8 389 298.4 381.8 297.2 372.4C296.4 365.7 296 358.9 296 352C296 345.1 296.4 338.3 297.2 331.6C298.4 322.2 305.8 314.1 315.1 313L344.1 306.1C349.1 293.7 356.2 281.5 365.1 270.8L355.8 242.5C352.8 233.5 355.3 223.5 362.9 217.8C367.6 214.3 372.5 210.1 377.5 207.9L382.8 204.9C387.8 202.1 392.1 199.6 398.3 197.3C407 193.6 416.1 196.5 423.3 203.5L443.1 225.7C449.9 224.6 456.9 224 464 224C471.1 224 478.1 224.6 484.9 225.7L504.7 203.5C511 196.5 520.1 193.6 529.7 197.3C535 199.6 540.2 202.1 545.2 204.9L550.5 207.9C555.5 210.1 560.4 214.3 565.1 217.8C572.7 223.5 575.2 233.5 572.2 242.5L562.9 270.8C571.8 281.5 578.9 293.7 583.9 306.1L612.9 313C622.2 314.1 629.6 322.2 630.8 331.6C631.6 338.3 632 345.1 632 352C632 358.9 631.6 365.7 630.8 372.4C629.6 381.8 622.2 389 612.9 390.1L583.9 397C578.9 410.3 571.8 422.5 562.9 433.2L572.2 461.5C575.2 470.5 572.7 480.5 565.1 486.2C560.4 489.7 555.6 492.1 550.6 496L545.2 499.1C540.2 501.9 534.1 504.4 529.7 506.7C520.1 510.4 511 507.5 504.7 500.5L484.9 478.3zM512 352C512 325.5 490.5 304 464 304C437.5 304 416 325.5 416 352C416 378.5 437.5 400 464 400C490.5 400 512 378.5 512 352z"></path></svg><!-- <i class="fa-solid fa-gears pb-2"></i> Font Awesome fontawesome.com --></span>
+                            <h6>Faculties Services</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-5 col-xs-3 md-mb-30 bg-blue-custome  text-center wow fadeInUp" onclick="getFocus()" data-wow-delay="0.2s" id="ExternalServices-div" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <a class="nav-link mt-2 pt-4" id="ExternalServices-tab" data-toggle="tab" href="#ExternalServices" role="tab" aria-controls="ExternalServices" aria-selected="false">
+                            <span class="icon" style="background-color:#6fadfa"><svg class="svg-inline--fa fa-star pb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"></path></svg><!-- <i class="fa-solid fa-star pb-2"></i> Font Awesome fontawesome.com --></span>
+                            <h6>Centers Services</h6>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="row mt-2 nav nav-tabs startup_tab  d-flex justify-content-around">
+                    <div class="col-lg-2 col-md-5 md-mb-30 bg-blue-custome  text-center wow fadeInDown" onclick="getFocus()" data-wow-delay="0.2s" id="UniversityConference-div" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
+                        <a class="nav-link mt-2 pt-4" id="UniversityConference-tab" data-toggle="tab" href="#UniversityConference" role="tab" aria-controls="UniversityConference" aria-selected="false">
+                            <span class="icon" style=" background: #f3af4e;"><svg class="svg-inline--fa fa-gear pb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gear" role="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M495.9 166.6C499.2 175.2 496.4 184.9 489.6 191.2L446.3 230.6C447.4 238.9 448 247.4 448 256C448 264.6 447.4 273.1 446.3 281.4L489.6 320.8C496.4 327.1 499.2 336.8 495.9 345.4C491.5 357.3 486.2 368.8 480.2 379.7L475.5 387.8C468.9 398.8 461.5 409.2 453.4 419.1C447.4 426.2 437.7 428.7 428.9 425.9L373.2 408.1C359.8 418.4 344.1 427 329.2 433.6L316.7 490.7C314.7 499.7 307.7 506.1 298.5 508.5C284.7 510.8 270.5 512 255.1 512C241.5 512 227.3 510.8 213.5 508.5C204.3 506.1 197.3 499.7 195.3 490.7L182.8 433.6C167 427 152.2 418.4 138.8 408.1L83.14 425.9C74.3 428.7 64.55 426.2 58.63 419.1C50.52 409.2 43.12 398.8 36.52 387.8L31.84 379.7C25.77 368.8 20.49 357.3 16.06 345.4C12.82 336.8 15.55 327.1 22.41 320.8L65.67 281.4C64.57 273.1 64 264.6 64 256C64 247.4 64.57 238.9 65.67 230.6L22.41 191.2C15.55 184.9 12.82 175.3 16.06 166.6C20.49 154.7 25.78 143.2 31.84 132.3L36.51 124.2C43.12 113.2 50.52 102.8 58.63 92.95C64.55 85.8 74.3 83.32 83.14 86.14L138.8 103.9C152.2 93.56 167 84.96 182.8 78.43L195.3 21.33C197.3 12.25 204.3 5.04 213.5 3.51C227.3 1.201 241.5 0 256 0C270.5 0 284.7 1.201 298.5 3.51C307.7 5.04 314.7 12.25 316.7 21.33L329.2 78.43C344.1 84.96 359.8 93.56 373.2 103.9L428.9 86.14C437.7 83.32 447.4 85.8 453.4 92.95C461.5 102.8 468.9 113.2 475.5 124.2L480.2 132.3C486.2 143.2 491.5 154.7 495.9 166.6V166.6zM256 336C300.2 336 336 300.2 336 255.1C336 211.8 300.2 175.1 256 175.1C211.8 175.1 176 211.8 176 255.1C176 300.2 211.8 336 256 336z"></path></svg><!-- <i class="fa-solid fa-gear pb-2"></i> Font Awesome fontawesome.com --></span>
+                            <h6>University Conference</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-5 md-mb-30 bg-blue-custome  text-center wow fadeInDown" onclick="getFocus()" data-wow-delay="0.2s" id="EarlyAdmissionForPostGrads-div" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
+                        <a class="nav-link mt-2 pt-4" id="EarlyAdmissionForPostGrads-tab" data-toggle="tab" href="#EarlyAdmissionForPostGrads" role="tab" aria-controls="EarlyAdmissionForPostGrads" aria-selected="false">
+                            <span class="icon" style="background: #6fadfa;"><svg class="svg-inline--fa fa-link pb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" role="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"></path></svg><!-- <i class="fa-solid fa-link pb-2"></i> Font Awesome fontawesome.com --></span>
+                            <h6>Application for postgraduate studies</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-5 md-mb-30 bg-blue-custome  text-center wow fadeInDown" onclick="getFocus()" data-wow-delay="0.2s" id="BlendedLearningAdmission-div" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
+                        <a class="nav-link mt-2 pt-4" id="BlendedLearningAdmission-tab" data-toggle="tab" href="#BlendedLearningAdmission" role="tab" aria-controls="BlendedLearningAdmission" aria-selected="false">
+                            <span class="icon" style="background: #fa6640;"><svg class="svg-inline--fa fa-medal pb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="medal" role="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M223.7 130.8L149.1 7.77C147.1 2.949 141.9 0 136.3 0H16.03c-12.95 0-20.53 14.58-13.1 25.18l111.3 158.9C143.9 156.4 181.7 137.3 223.7 130.8zM256 160c-97.25 0-176 78.75-176 176S158.8 512 256 512s176-78.75 176-176S353.3 160 256 160zM348.5 317.3l-37.88 37l8.875 52.25c1.625 9.25-8.25 16.5-16.63 12l-46.88-24.62L209.1 418.5c-8.375 4.5-18.25-2.75-16.63-12l8.875-52.25l-37.88-37C156.6 310.6 160.5 299 169.9 297.6l52.38-7.625L245.7 242.5c2-4.25 6.125-6.375 10.25-6.375S264.2 238.3 266.2 242.5l23.5 47.5l52.38 7.625C351.6 299 355.4 310.6 348.5 317.3zM495.1 0H375.7c-5.621 0-10.83 2.949-13.72 7.77l-73.76 122.1c42 6.5 79.88 25.62 109.5 53.38l111.3-158.9C516.5 14.58 508.9 0 495.1 0z"></path></svg><!-- <i class="fa-solid fa-medal pb-2"></i> Font Awesome fontawesome.com --></span>
+                            <h6>Blended Learning Admission</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-5 md-mb-30 bg-blue-custome  text-center wow fadeInDown" onclick="getFocus()" data-wow-delay="0.2s" id="CertificatesDocumentation-div" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
+                        <a class="nav-link mt-2 pt-4" id="CertificatesDocumentation-tab" data-toggle="tab" href="#CertificatesDocumentation" role="tab" aria-controls="CertificatesDocumentation" aria-selected="false">
+                            <span class="icon" style="background: #6fadfa;"><svg class="svg-inline--fa fa-arrows-rotate pb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrows-rotate" role="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M464 16c-17.67 0-32 14.31-32 32v74.09C392.1 66.52 327.4 32 256 32C161.5 32 78.59 92.34 49.58 182.2c-5.438 16.81 3.797 34.88 20.61 40.28c16.89 5.5 34.88-3.812 40.3-20.59C130.9 138.5 189.4 96 256 96c50.5 0 96.26 24.55 124.4 64H336c-17.67 0-32 14.31-32 32s14.33 32 32 32h128c17.67 0 32-14.31 32-32V48C496 30.31 481.7 16 464 16zM441.8 289.6c-16.92-5.438-34.88 3.812-40.3 20.59C381.1 373.5 322.6 416 256 416c-50.5 0-96.25-24.55-124.4-64H176c17.67 0 32-14.31 32-32s-14.33-32-32-32h-128c-17.67 0-32 14.31-32 32v144c0 17.69 14.33 32 32 32s32-14.31 32-32v-74.09C119.9 445.5 184.6 480 255.1 480c94.45 0 177.4-60.34 206.4-150.2C467.9 313 458.6 294.1 441.8 289.6z"></path></svg><!-- <i class="fa-solid fa-arrows-rotate pb-2"></i> Font Awesome fontawesome.com --></span>
+                            <h6>Documentation Of Certificates</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-5 md-mb-30 bg-blue-custome  text-center wow fadeInDown" onclick="getFocus()" data-wow-delay="0.2s" id="Coursera-div" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
+                        <a class="nav-link  mt-2 pt-4" id="Coursera-tab" data-toggle="tab" href="#Coursera" role="tab" aria-controls="Coursera" aria-selected="false">
+                            <span class="icon" style="background: #f3af4e;"><svg class="svg-inline--fa fa-book-open pb-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" role="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M144.3 32.04C106.9 31.29 63.7 41.44 18.6 61.29c-11.42 5.026-18.6 16.67-18.6 29.15l0 357.6c0 11.55 11.99 19.55 22.45 14.65c126.3-59.14 219.8 11 223.8 14.01C249.1 478.9 252.5 480 256 480c12.4 0 16-11.38 16-15.98V80.04c0-5.203-2.531-10.08-6.781-13.08C263.3 65.58 216.7 33.35 144.3 32.04zM557.4 61.29c-45.11-19.79-88.48-29.61-125.7-29.26c-72.44 1.312-118.1 33.55-120.9 34.92C306.5 69.96 304 74.83 304 80.04v383.1C304 468.4 307.5 480 320 480c3.484 0 6.938-1.125 9.781-3.328c3.925-3.018 97.44-73.16 223.8-14c10.46 4.896 22.45-3.105 22.45-14.65l.0001-357.6C575.1 77.97 568.8 66.31 557.4 61.29z"></path></svg><!-- <i class="fa-solid fa-book-open pb-2"></i> Font Awesome fontawesome.com --></span>
+                            <h6>Book Coursera</h6>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="tab-content startup_tab_content" id="ScrollElement">
+                    <div class="tab-pane fade active show" id="Login" role="tabpanel" aria-labelledby="Login-tab">
+                        <div class="startup_tab_img">
+                            <style>
+    #DomainDDL > span {
+    width: 100%;
+    }
+    .login_link:hover{
+    color : #f3af4e !important;
+    }
+    </style>
+    
+    <div class="">
+    <div class="row  login-row bg-white ">
+    <div class="col-lg-7 col-md-12 col-sm-12 pt-lg-5 pt-md-5 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+        <div class="login_info pt-lg-5 pt-md-5">
+            <div class="row">
+                <span class="colored-span mb-2">  </span>
+            </div>
+            
+        <form id="LoginForm" enctype="multipart/form-data" class="login-form mt_60" method="post" novalidate="novalidate">
+            <input name="__RequestVerificationToken" type="hidden" value="lKohINUTb0MVpFxZOGS4hJdxDQIiJyUAvHQ6PCS4nHYzNtQTkt44Nkh-VhfkUNm13A7ZjCdFSVMzbMwBbblEzbGoSMHskd13GckPrQQMvWw1">
+    
+            <div id="DominDiv">
+                <br>
+                <div class="input-group-append ">
+                    <div id="DomainDDL" style="width: 100%;">
+    <script>
+    kendo.syncReady(function(){jQuery("#DomainName").kendoDropDownList({"dataSource":{"transport":{"read":{"url":"/App/FacultyNameLogo"},"prefix":""},"schema":{"errors":"Errors"}},"dataTextField":"FacultyName","filter":"contains","template":"\u003cimg class=\"selected-value\" onerror=\"errorImage(this)\" style=\"width:30px;height:25px;\" src=\"#:data.LogoImage#\" /\u003e\u003cspan\u003e#:data.FacultyName#\u003c/span\u003e","valueTemplate":"\u003cimg class=\"selected-value\" onerror=\"errorImage(this)\" style=\"width:20px;height:15px;\" src=\"#:data.LogoImage#\" /\u003e\u003cspan\u003e#:data.FacultyName#\u003c/span\u003e","dataValueField":"DomainName"});});
+    </script>
+    
+                    </div>
+                    <input id="DomainName" name="DomainName" type="hidden" value="@cis.asu.edu.eg">
+                </div>
+            </div>
+    
+            
+        </form>
+    
+        </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="GraduatesAssociationServices" role="tabpanel" aria-labelledby="GraduatesAssociationServices-tab">
+                        <div class="startup_tab_img">
+                            
+    <div class="sign_info">
+    <div class="row">
+    <div class="col-lg-8">
+        <div class="login_info">
+            <h2 class="f_p f_700 f_size_40 t_color3 mb_20">Graduates Association Services</h2>
+    
+            The Graduate Relations Office at Ain Shams University works to build fruitful relationships with alumni, whether inside or outside Egypt. The Association also supports university graduates through a range of activities and provides some renewable services.
+            <br>
+            <a class="er_btn er_btn_two bg-light-blue" href="/RequestServiceGraduateAssociation">Join Now</a>
+            <a class="er_btn er_btn_two bg-light-blue" href="/ShowTestmonial/GetQuestionsTestmonial?category=GraduatesAssociation">Your Opinion Matters</a>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <img class="img-fluid" src="/assets/en/img/home2/overview.png" alt="" style="width: 100%;">
+    </div>
+    </div>
+    
+    </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="EarlyAdmission" role="tabpanel" aria-labelledby="EarlyAdmission-tab">
+                        <div class="startup_tab_img">
+                            
+    <div class="sign_info">
+    <div class="row">
+    
+    <div class="col-lg-8">
+        <div class="login_info">
+            <h2 class="f_p f_700 f_size_40 t_color3 mb_20">Early Admission Request For Bachelor's students</h2>
+    
+           
+    
+            <br>
+            <a class="er_btn er_btn_two bg-light-blue" href="/ApplicationRegister">Early Admission Request</a>
+    
+            <a class="er_btn er_btn_two bg-light-blue" href="/ApplicationRegister/Track">Track Admission</a>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <img class="img-fluid" src="/assets/en/img/home2/inbox.png" alt="" style="width: 100%;">
+    </div>
+    </div>
+    
+    </div>
+    
+    
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="FacultyServices" role="tabpanel" aria-labelledby="FacultyServices-tab">
+                        <div class="startup_tab_img">
+                            
+    <div class="sign_info">
+    <div class="row">
+    
+    
+    
+    <div class="col-lg-8">
+        <div class="login_info">
+            <h2 class="f_p f_700 f_size_40 t_color3 mb_20">Faculties Services</h2>
+    
+            AinShams University provides multiple inner and outter services accourdingly for each faculty.This benifits students before and through out their academic years to facilitate applying automatically for services.
+            <br>
+            <a class="er_btn er_btn_two bg-light-blue" href="/RequestService">Request Service</a>
+    
+            <a class="er_btn er_btn_two bg-light-blue" href="/TrackExternalServices/Track">Track Service</a>
+        </div>
+    </div>
+    <div class="col-lg-4 cloud_img">
+        <img class="img-fluid" src="/assets/en/img/login_img2.png" alt="">
+    </div>
+    </div>
+    
+    </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ExternalServices" role="tabpanel" aria-labelledby="ExternalServices-tab">
+                        <div class="startup_tab_img">
+                            
+    <div class="sign_info">
+    <div class="row">
+    
+    
+    
+    <div class="col-lg-8">
+        <div class="login_info">
+            <h2 class="f_p f_700 f_size_40 t_color3 mb_20">Community Service Affairs and Environment Sector Services</h2>
+    
+            Ain Shams University is keen to contribute effectively to solving community problems... Therefore, the Community Service and Environmental Development Sector is keen, through many activities and events, to provide many different services that can work on the advancement and development of society on the one hand, in addition to involving students in social interaction and planting a spirit of cooperation in them to be more effective and serve their country.
+            <br>
+            <a class="er_btn er_btn_two bg-light-blue" href="/UniversityCentersService">Request Service</a>
+    
+            <a class="er_btn er_btn_two bg-light-blue" href="/TrackExternalServices/Track">Track Service</a>
+        </div>
+    </div>
+    
+    </div>
+    
+    </div>
+    
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="UniversityConference" role="tabpanel" aria-labelledby="UniversityConference-tab">
+                        <div class="startup_tab_img">
+                            
+    
+    <div class="sign_info">
+    <div class="row">
+    
+    <div class="login_info">
+        <div class="landscape">
+            <img src="/assets/Images/Univerity-9th-Conference.png" class="img-fluid">
+            <div class="d-flex justify-content-center">
+                <div class="mx-1">
+                    <a class="er_btn er_btn_two bg-light-blue" href="/RequestServiceUniversityConference">Request Subscription</a>
+                </div>
+                <div class="mx-1">
+                    <a class="er_btn er_btn_two bg-light-blue" href="/TrackExternalServices/Track">Track Subscription</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="EarlyAdmissionForPostGrads" role="tabpanel" aria-labelledby="EarlyAdmissionForPostGrads-tab">
+                        <div class="startup_tab_img">
+                            
+    <div class="sign_info">
+    <div class="row">
+    <div class="col-lg-8">
+        <div class="login_info">
+            <h2 class="f_p f_700 f_size_40 t_color3 mb_20">Early Admission For Post Graduates</h2>
+    
+          
+    
+            <br>
+            <a class="er_btn er_btn_two bg-light-blue" href="/PGApplicationRegister">Admission Request</a>
+    
+            <a class="er_btn er_btn_two bg-light-blue" href="/PGApplicationRegister/Track">Track Admission</a>
+        </div>
+    </div>
+    
+    <div class="col-lg-4">
+        <img class="img-fluid" src="/assets/en/img/breadcrumb/service_details_one.png" alt="" style="width: 100%;">
+    </div>
+    </div>
+    
+    </div>
+                        </div>
+                    </div>
+    
+                    <div class="tab-pane fade" id="BlendedLearningAdmission" role="tabpanel" aria-labelledby="BlendedLearningAdmission-tab">
+                        <div class="startup_tab_img">
+                            
+    <div class="sign_info">
+    <div class="row">
+    <div class="col-lg-8">
+        <div class="login_info">
+            <h2 class="f_p f_700 f_size_40 t_color3 mb_20">Blended Learning Admission</h2>
+    
+            Applications to apply for the Blended Learning Center accredited by the Supreme Council of Universities - Ministry of Higher Education.
+    Conditions of enrollment:
+    - The student must have a high school diploma or equivalent qualifications
+    Intermediate or higher qualifications
+    Two years or more have passed since obtaining the intermediate qualification (until 2020)
+    - Having the entrance exams (Arabic - English - Computer)
+    - Exempting Egyptian students abroad from Arab or foreign countries from the condition
+    For two years, provided that the student submits proof of valid legal residency in the country of residence.
+    - Exempting students residing in North and South Sinai from the two-year condition, provided they are presented
+    Proves residency in the governorate.
+    Higher qualifications are exempted from the period of time.
+            
+            
+            
+            
+            
+            
+            
+            <br>
+                <a class="er_btn er_btn_two bg-light-blue" href="/BlendedLearningAdmission/Track">Track Admission</a>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <img class="img-fluid" src="/assets/en/img/home2/overview.png" alt="" style="width: 100%;">
+    </div>
+    </div>
+    
+    </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="CertificatesDocumentation" role="tabpanel" aria-labelledby="CertificatesDocumentation-tab">
+                        <div class="startup_tab_img">
+                            
+    <div class="sign_info">
+    <div class="row">
+    <div class="col-lg-8">
+        <div class="login_info">
+            <h2 class="f_p f_700 f_size_40 t_color3 mb_20">Documentation Of Certificates</h2>
+    
+            
+                <a class="er_btn er_btn_two bg-light-blue" href="/CertificatesDocumentation">Request Service</a>
+                <a class="er_btn er_btn_two bg-light-blue" href="/CertificatesDocumentation/Track">Track Certificate Documentation</a>
+           
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <img class="img-fluid" src="/assets/en/img/home2/overview.png" alt="" style="width: 100%;">
+    </div>
+    </div>
+    
+    </div>
+                        </div>
+                    </div>
+    
+                    <div class="tab-pane fade" id="Coursera" role="tabpanel" aria-labelledby="BlendedLearningAdmission-tab">
+                        <div class="startup_tab_img">
+                            
+    <div class="sign_info">
+    <div class="row">
+    
+    
+    
+    <div class="col-lg-8">
+        <div class="login_info">
+            <h2 class="f_p f_700 f_size_40 t_color3 mb_20">Book Coursera</h2>
+    
+          
+            <br>
+            <a class="er_btn er_btn_two bg-light-blue" href="/CourseraApplication">Request Service</a>
+    
+            
+        </div>
+    </div>
+    <div class="col-lg-4 cloud_img">
+          <img class="img-fluid" src="~/assets/en/img/login_img2.png" alt="">
+    </div>
+    </div>
+    
+    </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- <div class="container-md">
+        <div class="row">
+          <div class="col">
+            <a class="btn btn-primary" href="#" role="button">Login</a>
+          </div>
+          <div class="col">
+            <a class="btn btn-primary" href="#" role="button">Early admission</a>
+          </div>
+          <div class="col">
+            <a class="btn btn-primary" href="#" role="button"
+              >Graduates Service</a
+            >
+          </div>
+          <div class="col">
+            <a class="btn btn-primary" href="#" role="button"
+              >Faculties Service</a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="btn btn-primary" href="#" role="button">Centers Service</a>
+          </div>
+          <div class="col">
+            <a class="btn btn-primary" href="#" role="button">Uni Conference</a>
+          </div>
+          <div class="col">
+            <a class="btn btn-primary" href="#" role="button"
+              >Application for postgrad</a
+            >
+          </div>
+          <div class="col">
+            <a class="btn btn-primary" href="#" role="button">Blended Learning</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="btn btn-primary" href="#" role="button"
+              >Documentation Of Certificate</a
+            >
+          </div>
+          <div class="col">
+            <a class="btn btn-primary" href="#" role="button">Book Coursera</a>
+          </div>
+        </div>
+      </div> 
+    </section>
+  
+   
+        
+
+
+      <!--Login Form -->
+      <div class="container-fluid">
+      <form>
+        <img src="CSS/img/loginback.jpg" width="600" height="700" />
+        <p>Login</p>
+        <h9>College</h9>
+        <br />
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Medicine</a>
+              <a class="dropdown-item" href="#">computer science</a>
+              <a class="dropdown-item" href="#">Agriculture</a>
+              <a class="dropdown-item" href="#">pharmacy</a>
+              <a class="dropdown-item" href="#">Engineering</a>
+            </div>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Text input with dropdown button"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <div class="text-center mt-4 mb-sm-3 mb-3 d-flex justify-content-between">
+            <a href="/LogInRequest" style="color:grey" class="f_size_16 f_300 login_link">Can't Login ? Contact Technical Support</a>
+            <a href="/App/ResetPassword" style="color:grey" class="f_size_16 f_300 login_link">Can't Remember Your Password? </a>
+        </div>
+      </form>
+    </div>
+    <br />
+    <br />
+    <!--Tab content -->
+    <div
+      class="row tab_roles d-flex justify-content-center wow bounceInUp"
+      data-wow-delay="0.6s"
+      style="
+        padding-bottom: 5%;
+        padding-top: 3%;
+        visibility: visible;
+        animation-delay: 0.6s;
+        animation-name: bounceInUp;
+      "
+    >
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-8 col-md-8 col-sm-12 d-flex justify-content-end">
+          <div class="tab p-4">
+            <button class="tablinks f_size_24 tab_font_color active" width="30%" onclick="openSection(event, 'Undergraduate')" >
+            <svg
+                class="svg-inline--fa fa-circle-user i-blue mr-1"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="circle-user"
+                width="100"
+                height="100"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                data-fa-i2svg=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"></path>
+              </svg>
+              Undergraduate Students
+            </button>
+            <button class="tablinks f_size_24 tab_font_color" width="30%" onclick="openSection(event, 'PostGraduate')">
+              <svg
+                class="svg-inline--fa fa-graduation-cap i-blue mr-1"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="graduation-cap"
+                width="100"
+                height="100"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+                data-fa-i2svg=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"></path>
+            </svg>
+              Postgraduate Students
+            </button>
+
+            <button
+              class="tablinks f_size_24 tab_font_color"
+              width="30%"
+              onclick="openSection(event, 'Staff')"
+            >
+              <svg
+                class="svg-inline--fa fa-building-columns i-blue mr-1"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="building-columns"
+                width="100"
+                height="100"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                data-fa-i2svg=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M243.4 2.587C251.4-.8625 260.6-.8625 268.6 2.587L492.6 98.59C506.6 104.6 514.4 119.6 511.3 134.4C508.3 149.3 495.2 159.1 479.1 160V168C479.1 181.3 469.3 192 455.1 192H55.1C42.74 192 31.1 181.3 31.1 168V160C16.81 159.1 3.708 149.3 .6528 134.4C-2.402 119.6 5.429 104.6 19.39 98.59L243.4 2.587zM256 128C273.7 128 288 113.7 288 96C288 78.33 273.7 64 256 64C238.3 64 224 78.33 224 96C224 113.7 238.3 128 256 128zM127.1 416H167.1V224H231.1V416H280V224H344V416H384V224H448V420.3C448.6 420.6 449.2 420.1 449.8 421.4L497.8 453.4C509.5 461.2 514.7 475.8 510.6 489.3C506.5 502.8 494.1 512 480 512H31.1C17.9 512 5.458 502.8 1.372 489.3C-2.715 475.8 2.515 461.2 14.25 453.4L62.25 421.4C62.82 420.1 63.41 420.6 63.1 420.3V224H127.1V416z"
+                ></path>
+              </svg>
+              Staff Services
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12">
+            <div id="Undergraduate" class="tabcontent" style="display: block">
+              <div class="row card-login">
+                <div class="col-lg-7 col-md-7 col-sm-12 p-5">
+                  <p class="mt-5 f_size_24 f_400">
+                    Ain Shams University system provides special services for
+                    undergraduate students. These services can be used by logging
+                    in, such as viewing the final result, business grades for the
+                    year, registering courses, making a petition, electronic
+                    payment of expenses, ...
+                  </p>
+                  <a
+                    href="/App/Login_Form"
+                    class="er_btn er_btn_two color-light-yellow threeD-circlular wow fadeInLeft p-3 text-white"
+                    style="
+                      font-size: 22px;
+                      visibility: visible;
+                      animation-name: fadeInLeft;
+                    "
+                  >
+                    <i class="ti-lock ml-1 mr-1"></i> Login
+                  </a>
+                </div>
+                <div class="col-lg-5  col-md-5 col-sm-12"> 
+                    <img src="CSS/img/cheerful-young-womang (1).jpeg" width="100%" height="100%">
+            </div>
+              </div>
+            </div>
+            <div id="PostGraduate" class="tabcontent" style="display: none">
+              <div class="row card-login">
+                <div class="col-lg-7 col-md-7 col-sm-12 p-5">
+                  <p class="mt-5 f_size_24 f_400">
+                    Ain Shams University system provides special services for
+                    postgraduate students. These services can be used by logging
+                    in, such as displaying the final result, grades of business of
+                    the year, ...
+                  </p>
+                  <a
+                    href="/App/Login_Form"
+                    class="er_btn er_btn_two color-light-yellow threeD-circlular p-3 text-white"
+                    style="font-size: 22px"
+                    data-wow-delay="0.8s"
+                  >
+                    <i class="ti-lock ml-1 mr-1"></i> Login
+                  </a>
+                </div>
+                <div class="col-lg-5  col-md-5 col-sm-12">
+                    <img src="CSS/img/cheerful-young-womang (1).jpeg" width="100%" height="100%">
+                </div>
+
+              </div>
+            </div>
+            <div id="Staff" class="tabcontent" style="display: none">
+              <div class="row card-login">
+                <div class="col-lg-7 col-md-7 col-sm-12 p-5">
+                  <p class="mt-5 f_size_24 f_400">
+                    The Ain Shams University system provides special services to
+                    the faculty and the supporting staff. These services can be
+                    used by logging in to their account.
+                  </p>
+                  <a
+                    href="/App/Login_Form"
+                    class="er_btn er_btn_two color-light-yellow p-3 threeD-circlular text-white"
+                    style="font-size: 22px"
+                  >
+                    <i class="ti-lock ml-1 mr-1"></i> Login
+                  </a>
+                </div>
+                <div class="col-lg-5  col-md-5 col-sm-12">
+                    <img src="CSS/img/cheerful-young-womang (1).jpeg" width="100%" height="100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    </div>
+    <script>
+        function openSection(evt, sectionName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(sectionName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <!--Te3bt bgad-->
+    <div class="container">
+        <div class="row flex-roe-reverse align-items-center">
+            <div class="col-lg-4 offset-lg-1">
+                <div class="chat_features_img chat_features_img_three  ">
+                    <img class="p_absoulte chat_two " width="95%" src="CSS/img/services.jpg" >
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="f_widgwt about-widget pl_20 wow  animated" data-wow-animated="0.3s" style="visibility:visible;animation-delay:0.3s">
+                    <p style="color:lightsteelblue ; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Most Used Services </p>
+                    <ul>
+                        <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Course Registration</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Completing/modifuing data</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Courses</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset"> Withdraw Course Request </a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">QR Code</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Schedule</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Year work Grades </a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Bifurcation</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Complains</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Appeal</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Payments</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Payment History</a>
+                          </p></li>
+                    </ul>
+                    <p style="color:lightsteelblue ; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Recently Added Services </p>
+                    <ul>
+                        <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Coursera Courses</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Documentation Of Certificates</a>
+                          </p></li>
+                          <li style="color:grey;"><p>
+                            <a href="#!" class="text-reset">Applying for Post Graduate Studies</a>
+                          </p></li>
+                    </ul>
+                </div>
+            </div>
+       
+        
+        
+        
+        
+    </div>
+    </div>
+    <!--Progress Bar-->
+    <div style="background-color:#1c335f">
+        <div class="container text-center">
+            <div class="row justify-content-md-center">
+              <div class="col-lg">
+                <div class="container">
+                    <div class="circular-progress">
+                         <span class="progress-value">
+                           0%
+                         </span>
+                    </div>
+                    <span class="text">Faculty</span>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="container">
+                    <div class="circular-progress" style="background: conic-gradient(#aa6ffa 3.6deg,#ededed 0deg );">
+                         <span class="progress-value">
+                            0%
+                         </span>
+                    </div>
+                    <span class="text">Visitors Number</span>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="container">
+                    <div class="circular-progress" style="background: conic-gradient(#aa6ffa 3.6deg,#ededed 0deg );">
+                         <span class="progress-value">
+                            0%
+                         </span>
+                    </div>
+                    <span class="text">Undergraduate Students
+                    </span>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="container">
+                    <div class="circular-progress">
+                         <span class="progress-value">
+                            0%
+                         </span>
+                    </div>
+                    <span class="text">Postgraduate Students</span>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+    
+    </div>
+    <script>
+        let circularProgress = document.getElementsByClassName("circular-progress"),
+            progressValue = document.querySelectorAll(".progress-value");
+            console.log(circularProgress);
+        let progressStartValue = 0,
+            progressEndValue = [50,78,87,90]
+            speed = 20;
+    
+    for(let i=0;i<circularProgress.length;i++){
+
+    
+        let progress = setInterval(() => {
+            progressStartValue++;
+
+            // for(let i=0;i<circularProgress.length;i++)
+            progressValue[i].textContent = `${progressStartValue}+`
+            // for(let i=0;i<circularProgress.length;i++)
+            circularProgress[i].style.background = `conic-gradient(#aa6ffa ${progressStartValue * 3.6}deg,#ededed 0deg )`
+            //  for(let i=0;i<progressEndValue.length;i++)
+             if (progressStartValue >= progressEndValue[i]) {
+
+            clearInterval(progress);
+            
+             }
+    
+    
+    }, speed);
+}
+    </script>
+        
+        <!-- <section class="progress_bar_area ">
+            <div class="container">
+                <div class="sec_title mb_70 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                    
+                </div>
+                <div class="row ">
+                    <div class="col-lg-3 col-md-4 progress_item">
+                        <div class="circle" data-value="0.65" data-fill="{&quot;color&quot;: &quot;#aa6ffa&quot;}" data-trackcolor=""><img  src="CSS/img/download.png"width="200" height="200"></img>
+                            <div class="number text-white "><span class="counter">19</span>+</div>
+                        </div>
+                        <h4 class="text-white wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">Faculty</h4>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-4 progress_item">
+                        <div class="circle" data-value="0.82" data-fill="{&quot;color&quot;: &quot;#f3af4e&quot;}" data-trackcolor=""><img  src="CSS/img/yellow.png"width="200" height="200"></img>
+                            <div class="number text-white"><span class="counter">1,229,145</span></div>
+                        </div>
+                        <h4 class="text-white wow fadeInDown" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Visitors Number </h4>
+    
+                    </div>
+                    <div class="col-lg-3 col-md-4 progress_item">
+                        <div class="circle" data-value="0.92" data-fill="{&quot;color&quot;: &quot;#6fadfa&quot;}" data-trackcolor=""><img src="CSS/img/blue.png" width="200" height="200"></img>
+                            <div class="number text-white"><span class="counter">220614</span>+</div>
+                        </div>
+                        <h4 class="text-white wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">Undergraduate Students</h4>
+    
+                    </div>
+                    <div class="col-lg-3 col-md-4 progress_item">
+                        <div class="circle" data-value="0.70" data-fill="{&quot;color&quot;: &quot;#fa6fd1&quot;}" data-trackcolor=""><img src="CSS/img/pink.png"h="200" height="200"></img>
+                            <div class="number text-white"><span class="counter">20540</span>+</div>
+                        </div>
+                        <h4 class="text-white wow fadeInDown" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;"> Postgraduate Students</h4>
+    
+                    </div>
+    
+    
+                </div>
+                <div class="br_bottom"></div>
+            </div>
+    
+    
+        </section> -->
+    
+    
+        </div>
+       
+    <!-- <script>
+        function progressBar(evt,sectionName){
+
+let circularProgress = document.getElementsByClassName("circular-progress"),
+    progressValue = document.getElementsByClassName("progress-value");
+let progressStartValue = 0,
+    progressEndValue = 50,
+    speed = 20;
+
+
+let progress = setInterval(() => {
+      progressStartValue++;
+
+      progressValue.textContent = `${progressStartValue}%`
+      circularProgress.style.background = `conic-gradient(#aa6ffa ${progressStartValue * 3.6}deg,#ededed 0deg )`
+
+      if (progressStartValue == progressEndValue) {
+          clearInterval(progress);
+      }
+
+
+    }, speed);
+ }
+
+    </script> -->
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+         <a href="#!"><svg class="svg-inline--fa fa-facebook fa-2x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.8 90.69 226.4 209.3 245V327.7h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.3 482.4 504 379.8 504 256z"></path></svg></a> 
+           
+          <!-- YouTube -->
+          <a href="#!"><svg class="svg-inline--fa fa-youtube fa-2x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a> 
+           
+          <!-- LinkedIn -->
+          <a href="#!"><svg class="svg-inline--fa fa-linkedin-in fa-2x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path></svg></a>
+    
+          <!-- Instagram -->
+          <a href="#!"><svg class="svg-inline--fa fa-dribbble fa-2x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="dribbble" role="img"  width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119.3 8 8 119.3 8 256s111.3 248 248 248 248-111.3 248-248S392.7 8 256 8zm163.1 114.4c29.5 36.05 47.37 81.96 47.83 131.1-6.984-1.477-77.02-15.68-147.5-6.818-5.752-14.04-11.18-26.39-18.62-41.61 78.32-31.98 113.8-77.48 118.3-83.52zM396.4 97.87c-3.81 5.427-35.7 48.29-111 76.52-34.71-63.78-73.18-116.2-79.04-124 67.18-16.19 137.1 1.27 190.1 47.49zm-230.5-33.25c5.585 7.659 43.44 60.12 78.54 122.5-99.09 26.31-186.4 25.93-195.8 25.81C62.38 147.2 106.7 92.57 165.9 64.62zM44.17 256.3c0-2.166 .043-4.322 .108-6.473 9.268 .19 111.9 1.513 217.7-30.15 6.064 11.87 11.86 23.92 17.17 35.95-76.6 21.58-146.2 83.53-180.5 142.3C64.79 360.4 44.17 310.7 44.17 256.3zm81.81 167.1c22.13-45.23 82.18-103.6 167.6-132.8 29.74 77.28 42.04 142.1 45.19 160.6-68.11 29.01-150 21.05-212.8-27.88zm248.4 8.489c-2.171-12.89-13.45-74.9-41.15-151 66.38-10.63 124.7 6.768 131.9 9.055-9.442 58.94-43.27 109.8-90.79 141.1z"></path></svg></a>
+    
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <img src="CSS/img/logoums.png" alt="" width="130" height="130">
+            </h6>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Who Are We
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">About Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Ain Shams University</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">FCIS</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Complaints/Suggestions</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Your Opinion Matters</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Contact Us</a>
+              </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Important links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Site Map</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Egyptian Universities</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Academy Of Scientific Research</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Egyptian Knowledge Bank</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Follow Us</h6>
+            <a href="#!" class="text-reset">E-mail: ums.support@cis.asu.edu.eg</a>
+            <br>
+            <a href="#!" class="text-reset">Phone: 26831231 , 26831471 , 26831474</a>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © FCIS-AinShams 2020 - 2022
+      <nav></nav>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+   
+     
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
